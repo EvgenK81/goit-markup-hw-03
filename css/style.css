@@ -44,6 +44,7 @@ body {
 }
 
 .container{
+     box-sizing: border-box;
      width: 1200px;
      margin-left: auto;
      margin-right: auto;
@@ -52,6 +53,8 @@ body {
 }
 /*header*/
 .page-header{
+     border-bottom: 1px solid #ECECEC;
+
      padding-top: 24px;
      padding-bottom: 25px;
 }
@@ -75,8 +78,6 @@ body {
      margin-left: auto;
      }
      .logo{
-          padding-top: 24px;
-          padding-bottom: 25px;
           margin-right: 93px;
      }
      .menu-item:not(:last-child){
@@ -123,6 +124,7 @@ body {
 }
 
 .mailto {
+     margin-right: 50px;
      font-family: 'Roboto', sans-serif;
      font-weight: 500;
      font-size: 14px;
@@ -153,16 +155,12 @@ body {
 
 
 .hero{
-     
+     text-align: center;
      background-color:#2F303A;
      padding-top: 200px;
      padding-bottom: 200px;
 }
-.hero-container{
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-}
+
 
 .title-hero {
      margin-bottom: 30px;
@@ -260,7 +258,9 @@ body {
 .direction-smooth{
      display: flex;
 }
-
+.direction{
+     padding-top: 0%;
+}
 
 /*TEAM*/
 .team{
@@ -269,7 +269,9 @@ body {
           background: #F5F4FA;
 }
 .team-img{
-     margin-bottom: 10px;
+     height: auto;
+     max-width: 100%;
+    
 }
 .team-menu-smooth {
      display: flex;
@@ -289,10 +291,14 @@ body {
 
      color: var(--primary-font-color);
 }
+.team-div{
+padding-top: 30px;
+padding-bottom: 30px;
+}
 
 
 .team-name {
-     margin-bottom: 10px;
+  
      font-weight: 500;
      font-size: 16px;
      line-height: 1.19;
@@ -311,16 +317,18 @@ body {
 }
 
 /*footer-first*/
+
 .logo-style-footer{
+   
      font-family: var(--secondari-font);
-          font-style: normal;
-          font-weight: 700;
-          font-size: 26px;
-          line-height: 1.19;
-          letter-spacing: 0.03em;
-     
-          color: #2196F3;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 26px;
+     line-height: 1.19;
+     letter-spacing: 0.03em;
+     color: #2196F3;
      }
+     
 
 .logo-studio-footer {
      font-family: 'Raleway', sans-serif;
@@ -341,7 +349,11 @@ body {
      margin-bottom: 9px;
 }
 
-
+.sift{
+     font-style: normal;
+     font-family: 'Roboto', sans-serif;
+     margin-top: 20px;
+}
 .footer-maps {
      font-size: 14px;
      line-height: 1.71;
@@ -397,7 +409,8 @@ body {
 
 }
 .regulator-btn {
-    
+     margin: auto;
+     padding: 10px 32px;
      font-family: 'Roboto', sans-serif;
      font-style: normal;
      font-weight: 500;
@@ -417,18 +430,26 @@ body {
 
 /*photo*/
 .sentence {
-     padding-top: 20px;
-     padding-left: 24px;
+     /*padding-top: 20px;*/
+     /*padding-left: 24px;*/
+     margin-bottom: 4px;
      font-weight: 700;
      font-size: 18px;
      line-height: 2;
      letter-spacing: 0.06em;
      color: var(--primary-font-color);
+     
+}
+.sentence-padding {
+     padding: 20px 24px;
+     border-left: 1px solid #EEEEEE; 
+     border-right:1px solid #EEEEEE ;
+     border-bottom: 1px solid #EEEEEE;
 }
 
 .sentence-choice {
-     padding-bottom: 20px;
-     padding-left: 24px;
+     /*padding-bottom: 20px;
+     padding-left: 24px;*/
      font-size: 16px;
      line-height: 1.88;
      letter-spacing: 0.03em;
@@ -441,14 +462,8 @@ body {
 }
 .foto-menu-item{
      margin: 15px;
-     
-          width: 370px;
-          height: 404px;
-          left: 215px;
-          top: 262px;
-     
-          background: #FFFFFF;
-          border: 1px solid #EEEEEE;
+     background: #FFFFFF;
+     /*border: 1px solid #EEEEEE;*/
 
 }
 
